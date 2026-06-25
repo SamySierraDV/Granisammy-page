@@ -1,0 +1,6 @@
+{
+  "name": "Granisammy Acabados",
+  "description": "Herramienta activa de ventas B2B y captación de clientes premium para Granisammy Acabados S.A.S., especialistas en acabados de mármol de lujo en Barranquilla, Colombia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
