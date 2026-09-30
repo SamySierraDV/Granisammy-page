@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform, useReducedMotion } from 'motion/react';
 import TextReveal from '../../components/TextReveal';
 import MarbleShimmer from '../../components/MarbleShimmer';
+import heroBackground from '../../../assets/images/fondo.webp';
 
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -25,13 +26,20 @@ export default function HeroSection() {
       id="hero"
     >
       {/* Parallax Background */}
-      <motion.div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+      <motion.img
+        src={heroBackground}
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+        decoding="async"
+        fetchPriority="high"
+        className="absolute inset-0 z-0 h-full w-full object-cover"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(245, 240, 232, 0.45), rgba(245, 240, 232, 0.95)), url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=1600')`,
           y: shouldReduceMotion ? 0 : yParallax,
+          willChange: 'transform',
         }}
       />
+      <div className="absolute inset-0 z-0 bg-[linear-gradient(to_bottom,rgba(245,240,232,0.45),rgba(245,240,232,0.95))]" />
 
       {/* Decorative Gold Border Line at the bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-[0.5px] bg-gold/50 z-20" />

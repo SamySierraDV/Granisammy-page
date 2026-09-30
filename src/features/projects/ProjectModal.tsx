@@ -124,8 +124,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 <img
                   src={project.imageUrl}
                   alt={`Fotografía en alta calidad de ${project.name}`}
+                  width={1200}
+                  height={900}
+                  loading="eager"
+                  decoding="async"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="w-full h-full object-cover opacity-90"
-                  referrerPolicy="no-referrer"
                 />
                 
                 {/* Brand watermark inside */}

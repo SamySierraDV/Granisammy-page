@@ -1,4 +1,13 @@
 import { Project, ServiceItem, Metric } from '../types';
+import arkadia from '../../assets/images/arkadia.webp';
+import hotelSanFrancisco from '../../assets/images/hotel-sanFrancisco.webp';
+import morroIo from '../../assets/images/morroIo.webp';
+import morrosEco from '../../assets/images/morrosEco.webp';
+import morrosKai from '../../assets/images/morrosKai.webp';
+import morrosPark from '../../assets/images/morrosPark.webp';
+import morrosZoe from '../../assets/images/morrosZoe.webp';
+import portomarine from '../../assets/images/portomarine.webp';
+import temploMormon from '../../assets/images/temploMormon.webp';
 
 export const projectsData: Project[] = [
   {
@@ -11,7 +20,7 @@ export const projectsData: Project[] = [
     description: 'Acabados de pisos, baños y cocinas en mármol de alta gama para un proyecto hotelero de lujo de renombre internacional en el corazón histórico de Cartagena.',
     scope: ['Pisos', 'Baños', 'Cocinas', 'Zonas Comunes'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800',
+    imageUrl: hotelSanFrancisco,
     details: 'Instalación ejecutada bajo los más altos estándares hoteleros. Se colocaron más de 25.000 m² de mármol seleccionado de primera calidad que definen la excelencia y calidez del proyecto.'
   },
   {
@@ -24,7 +33,7 @@ export const projectsData: Project[] = [
     description: 'Diseño arquitectónico de vanguardia con acabados en mármol para pisos y baños con composición tipo graderías de estadio, fusionando funcionalidad y estética premium.',
     scope: ['Pisos', 'Baños', 'Escaleras Graderías', 'Detalles Decorativos'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=800',
+    imageUrl: arkadia,
     details: 'Un hito comercial en Medellín con más de 20.000 m² en acabados. Su majestuoso diseño tipo graderías de estadio fusiona transiciones de tráfico pesado con la delicadeza del mármol pulido.'
   },
   {
@@ -37,7 +46,7 @@ export const projectsData: Project[] = [
     description: 'Pisos brillados en mármol de alta pureza para un templo religioso de escala metropolitana costera. Ejecución de precisión artesanal en cada detalle.',
     scope: ['Pisos Brillados', 'Paredes Internas', 'Altares y Molduras'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800',
+    imageUrl: temploMormon,
     details: 'Con 7.000 m² de mármol de alta pureza instalados y brillados, este espacio espiritual es una muestra fiel de la maestría en cortes y acabados perfectos sin juntas visibles.'
   },
   {
@@ -50,7 +59,7 @@ export const projectsData: Project[] = [
     description: 'Uno de los proyectos inmobiliarios más ambiciosos de Colombia. Interiores de lujo y confort ejecutados en mármol seleccionado de primera calidad para vestíbulos y zonas comunes.',
     scope: ['Pisos', 'Vestíbulos', 'Zonas Comunes', 'Zonas de Alto Tráfico'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800',
+    imageUrl: portomarine,
     details: 'Un referente de exclusividad frente a la bahía de Cartagena. Acabados magistrales en mármol brillado y pulido de precisión artesanal para brindar sofisticación y permanencia.'
   },
   {
@@ -63,7 +72,7 @@ export const projectsData: Project[] = [
     description: 'Un condominio de estándares internacionales en Serena del Mar. En Morros Zoe, el mármol instalado en pisos, baños, mesones y piscinas refleja la excelencia de nuestro trabajo.',
     scope: ['Pisos', 'Baños', 'Mesones', 'Piscinas', 'Zonas Comunes'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=800',
+    imageUrl: morrosZoe,
     details: 'Residencial de lujo de diseño biofílico. Con más de 150 mesones de baños y cocinas, y acabados costeros pulidos con resistencia salina.'
   },
   {
@@ -76,7 +85,7 @@ export const projectsData: Project[] = [
     description: 'Consolidando una alianza de confianza con los desarrolladores más renombrados de Colombia. En Morros Ío ejecutamos acabados perfectos en áreas interiores y exteriores flotantes.',
     scope: ['Pisos Interiores', 'Baños', 'Mesones', 'Zonas Comunes', 'Piscinas'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80&w=800',
+    imageUrl: morroIo,
     details: 'Cada rincón de Morros Ío está recubierto con la calidad premium seleccionada por Gramar e instalada artesanalmente por nuestros maestros de obra.'
   },
   {
@@ -89,7 +98,7 @@ export const projectsData: Project[] = [
     description: 'El primer condominio de la serie Morros en Serena del Mar. Fue el punto de partida de nuestra duradera relación basada en confianza, precisión y cero tolerancia con la mediocridad.',
     scope: ['Pisos', 'Baños', 'Mesones', 'Zonas de Tránsito', 'Piscina Jacuzzi'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800',
+    imageUrl: morrosEco,
     details: 'Puntualidad e instalación impecable que pavimentó el camino para acompañar subsecuentemente a toda la familia de condominios de alta gama del noreste cartagenero.'
   },
   {
@@ -102,7 +111,7 @@ export const projectsData: Project[] = [
     description: 'El quinto condominio de playa de la familia Morros. Una demostración fehaciente de capacidad técnica, adaptabilidad artesanal e instalación impecable en cada milímetro.',
     scope: ['Pisos', 'Vestíbulos', 'Mesones de Cocina', 'Zonas Húmedas'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800',
+    imageUrl: morrosKai,
     details: 'Garantizamos transiciones suaves de materiales y juntas micro-selladas que evitan el paso de la humedad costera en apartamentos de alto valor de mercado.'
   },
   {
@@ -115,7 +124,7 @@ export const projectsData: Project[] = [
     description: 'El proyecto más ambicioso de la serie Morros. Un desarrollo de profunda sensibilidad biofílica, donde ejecutamos acabados premium de pisos, vestíbulos y zonas de alto tráfico.',
     scope: ['Pisos', 'Baños', 'Mesones', 'Piscinas', 'Jacuzzis', 'Zonas Comunes'],
     contractorBadge: 'Contratista Gramar',
-    imageUrl: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=800',
+    imageUrl: morrosPark,
     details: 'Con 20.000 m² de mármol pulido y zonas húmedas impermeabilizadas. Integra amplias áreas de piscinas y relajación con el entorno natural, elevando el lujo en el Caribe colombiano.'
   }
 ];

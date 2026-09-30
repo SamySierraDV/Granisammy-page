@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import MetricsCounter from '../../components/MetricsCounter';
 import { metricsData } from '../../data/projects';
 import MarbleShimmer from '../../components/MarbleShimmer';
+import aboutVisual from '../../../assets/images/portomarine.webp';
 
 export default function QuienesSomosSection() {
   return (
@@ -54,10 +55,14 @@ export default function QuienesSomosSection() {
           >
             <div className="relative group overflow-hidden bg-onyx cursor-default aspect-[4/3] rounded-sm shadow-2xl border border-gold/10">
               <img
-                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800"
+                src={aboutVisual}
                 alt="Detalle de mármol de lujo de la cantera instalado"
+                width={800}
+                height={600}
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 1024px) 100vw, 40vw"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-onyx/50 to-transparent pointer-events-none" />
               {/* Marble Shimmer Overlay */}
